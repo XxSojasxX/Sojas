@@ -74,12 +74,12 @@ if __name__ == "__main__":
     print(vars(uberflash1))
     print(vars(uberflash1.driver))
     
-    uberflash2 = UberFlash("KKA-143", "cHEVROLET", "blanco", "2003", "Matriz-2304578120", "S55-145", "E3E", Driver(10, "Jonathan Carvajal", "masculino", "09814152423", 19, "YTS567"))
+    uberflash2 = UberFlash("KKA-143", "CHEVROLET", "blanco", "2003", "Matriz-2304578120", "S55-145", "E3E", Driver(10, "Jonathan Carvajal", "masculino", "09814152423", 19, "YTS567"))
     print(vars(uberflash2))
     print(vars(uberflash2.driver))
     
     print("UberConfort:")
-    uberConfort1 =UberConfort("KKA-143", "cHEVROLET", "blanco", "2003", "Matriz-2304578120", 1, 6, "Tapizado de cuero", Driver(11, "Cesar revelo", "masculino", "098234132423", 20, "UFD211"))
+    uberConfort1 = UberConfort("KKA-143", "CHEVROLET", "blanco", "2003", "Matriz-2304578120", 1, 6, "Tapizado de cuero", Driver(11, "Cesar revelo", "masculino", "098234132423", 20, "UFD211"))
     print(vars(uberConfort1))
     print(vars(uberConfort1.driver))
     
@@ -91,3 +91,5 @@ if __name__ == "__main__":
     print(vars(trip1.user))
     print(vars(trip1.route))
     print(vars(trip1.payment))
+    print(vars(trip1.payment.user))
+    print(vars(trip1.payment.driver))
