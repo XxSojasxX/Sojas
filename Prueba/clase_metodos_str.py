@@ -1,18 +1,18 @@
-from clase_metodos import pizza
-class Pizza():
-    Pizza = pizza
+class Pizza:
+    nombre       = str 
+    ingrediente1 = str
+    ingrediente2 = str
+    tamaño       = str
+    
     def __init__(self, nombre, ingrediente1, ingrediente2, tamaño):
         self.nombre = nombre
         self.ingrediente1 = ingrediente1
         self.ingrediente2 = ingrediente2
         self.tamaño = tamaño
-    
-    def __str__(self):
-        return f"Su orden es una {self.nombre} que contiene {self.ingrediente1} y {self.ingrediente2} en tamaño {self.tamaño}"
 
-Pizza1 = pizza("Pizza de Peperoni", "Peperoni", "Queso", "Familiar")
-Pizza2 = pizza("Pizza Hawaiana", "Piña", "Jamon", "Mediano")
-print(Pizza1)
-print(Pizza2)
-print(vars(Pizza1))
-print(vars(Pizza2))
+    def __str__(self):
+        return f"Su orden es una {self.nombre} con {self.ingrediente1} y {self.ingrediente2} en tamaño {self.tamaño}"
+
+pizza1 = Pizza("Pizza de la casa", "Jamon", "Queso", "Familiar")
+print("Clase con metodo Str:")
+print(pizza1)
